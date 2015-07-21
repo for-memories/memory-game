@@ -1,0 +1,119 @@
+body {
+  margin: 0px;
+  padding: 0em;
+  border: 0px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 0;
+  background: #ff6f34;
+  color: white;
+}
+.menu-container {
+  /*centering perfectly here*/
+  position: relative;
+  /*this varies depending on size of the object */
+  margin-top: 20%;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+a:link{
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  border: 0;
+  vertical-align: baseline;
+  display: block;
+  font-size: 48pt;
+  text-align: center;
+  font-weight: normal;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.icon-lightbulb {
+  font-size: 30pt;
+  margin: 0;
+  vertical-align: baseline;
+}
+
+.newGame {
+  border: 0;
+  font-size: 28pt;
+  text-align: center;
+  letter-spacing: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}
+
+*, *:before, *:after{
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+
+.easyGame{
+  text-decoration: none;
+  vertical-align: baseline;
+  display: block;
+  font-size: 18pt;
+  text-align: center;
+  font-weight: normal;
+  letter-spacing: 0;
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  position: relative;
+  height: 50px;
+  width: 200px;
+  background-color: #4daaf2;
+  -webkit-transform: skew(20deg);
+  transform: skew(20deg);
+  border-top: solid transparent;
+  border-left: 0px transparent;
+  padding-top: 1em;
+  box-shadow: 3px 3px 3px #888888;
+}
+
+*, *:before, *:after{
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.hardGame {
+  text-decoration: none;
+  vertical-align: baseline;
+  display: block;
+  font-size: 18pt;
+  text-align: center;
+  font-weight: normal;
+  letter-spacing: 0;
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  position: relative;
+  height: 50px;
+  width: 200px;
+  background-color: #4daaf2;
+  -webkit-transform: skew(-20deg);
+  transform: skew(-20deg);
+  padding-top: 1.1em;
+  box-shadow: 3px 3px 3px #888888;
+  margin: .75em;
+}
+
+
+.hardGame:after{
+  content: "";
+  height: 50px;
+  width: 200px;
+}

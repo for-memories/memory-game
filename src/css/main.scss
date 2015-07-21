@@ -1,0 +1,26 @@
+@import 'reset';
+@import 'defaults';
+@import 'fontello.scss';
+
+
+/*------------------------------------*\
+    #COLORS
+\*------------------------------------*/
+
+  $white: #ffffff;
+  $blue-gray: #bbb0bd;
+  $orange: #fd823f;
+  $berry: #a30e42;
+  $purple: #531b4d;
+  $blue: #454b73;
+
+/*------------------------------------*\
+    #GAME-BOARD
+\*------------------------------------*/
+
+.game-card {
+  animation-duration: 150ms !important;
+  -webkit-animation-duration: 150ms !important;
+  animation-timing-function: ease-in !important;
+  -webkit-animating-timing-function: ease-in !important;
+}

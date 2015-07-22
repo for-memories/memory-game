@@ -217,6 +217,9 @@ html body [class^="icon-"]:before, [class*=" icon-"]:before {
 .game-checkbox {
   display: none; }
 
+.game-tile input {
+  display: none; }
+
 /*------------------------------------*\
     #COLORS
 \*------------------------------------*/

@@ -82,6 +82,7 @@ app.router.add('hard', function () {
   app.gamePage(16);
 });
 app.gamePage = function (numPairs) {
+  var matchCount = 0;
   var template = _.template($('#gameBoard').html(), { variable: 'm' });
   var html = template({
     cards: app.gameDeck(numPairs)
@@ -127,6 +128,8 @@ app.gamePage = function (numPairs) {
 
         //reset currentFlippedElement to go back to the first click
         currentFlippedElement ='';
+        matchCount == ++matchCount;
+        alert(matchCount);
       }
       else {
         //unflip both icons

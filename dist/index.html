@@ -21,20 +21,20 @@
       <span class="line">
         <img class="silhouette-left" src="img/profile-left.png">
       </span>
-      <span class="title">Memory<span class="icon-lightbulb title-bulb hvr-pop"></span></span>
+    <div class = "title-holder">
+
+      <div class="title">Memory<span class="icon-lightbulb title-bulb hvr-pop"></span></div>
         <span class="game-menu">
           <button class= "easy game-btn"> easy</button>
           <button class="hard game-btn"> hard </button>
         </span>
-      <span class="line">
-        <img class="silhouette" src="img/profile.png">
-      </span>
+    </div>
     </div>
   </script>
 
   <script type="text/html" id="gameBoard">
    <span class="title game-play">Memory<span class="icon-lightbulb title-bulb hvr-pop"></span></span>
-   
+
     <div class="game-board">
       <% m.cards.forEach(function (card) { %>
         <!-- attribute added to game-tile class, telling you the name of the icon with _. -->

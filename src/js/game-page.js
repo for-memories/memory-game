@@ -93,6 +93,7 @@ app.gamePage = function (numPairs) {
 
           //reset currentFlippedElement to go back to the first click
           currentFlippedElement ='';
+          app.decrementLives();
         }, 150);
 
 

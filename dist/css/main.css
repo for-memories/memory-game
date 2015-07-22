@@ -65,23 +65,6 @@ a {
   color: #00AAEE;
   text-decoration: none; }
 
-.home-wrapper {
-  height: 100%;
-  width: auto; }
-
-.game-menu {
-  border: 3px solid orange; }
-
-.silhouette {
-  height: 500px;
-  width: auto;
-  float: right; }
-
-.silhouette-left {
-  height: 500px;
-  width: auto;
-  float: left; }
-
 @font-face {
   font-family: 'fontello';
   src: url("../fonts/fontello.eot?50336093");
@@ -223,9 +206,6 @@ html body [class^="icon-"]:before, [class*=" icon-"]:before {
 
 /* '' */
 /*------------------------------------*\
-    #COLORS
-\*------------------------------------*/
-/*------------------------------------*\
     #GAME-BOARD
 \*------------------------------------*/
 .game-card {
@@ -236,5 +216,113 @@ html body [class^="icon-"]:before, [class*=" icon-"]:before {
 
 .game-checkbox {
   display: none; }
+
+/*------------------------------------*\
+    #COLORS
+\*------------------------------------*/
+/*------------------------------------*\
+    #HOME
+\*------------------------------------*/
+.home-wrapper {
+  height: 100%;
+  width: auto; }
+
+.game-menu {
+  padding: 0 1%; }
+
+.title {
+  font-family: 'Oleo Script', cursive;
+  font-weight: bold;
+  color: black;
+  font-size: 70px;
+  margin-left: 10%;
+  margin-right: 1%;
+  text-shadow: 3px 3px 0px #7986cb; }
+
+.title-bulb {
+  text-shadow: none;
+  color: #7986CB;
+  text-shadow: 2px 0px 2px #969696; }
+
+.title-bulb:hover {
+  color: gold;
+  transition: 300ms ease-in; }
+
+.game-btn {
+  margin-top: 20%;
+  margin-right: 1%;
+  background-color: #7986CB;
+  font-family: 'Titillium Web', sans-serif;
+  color: #ffffff;
+  font-size: 25px;
+  padding: 0 1% 0.5%;
+  border: 3px solid white;
+  border-radius: 10px;
+  outline: none;
+  border: none; }
+
+.game-btn:hover {
+  color: #7986CB;
+  font-weight: bold;
+  background-color: white;
+  border: 3px solid gold;
+  transition: 500ms; }
+
+.silhouette {
+  height: 500px;
+  width: auto;
+  float: right; }
+
+.silhouette-left {
+  height: 500px;
+  width: auto;
+  float: left; }
+
+/*------------------------------------*\
+    #HOVER ANIMATIONS
+\*------------------------------------*/
+/* from hover.css */
+@-webkit-keyframes hvr-pop {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); } }
+@keyframes hvr-pop {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); } }
+.hvr-pop {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale; }
+
+.hvr-pop:hover, .hvr-pop:focus, .hvr-pop:active {
+  -webkit-animation-name: hvr-pop;
+  animation-name: hvr-pop;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1; }
+
+/*------------------------------------*\
+    #GAME-PLAY
+\*------------------------------------*/
+.game-play {
+  text-align: center;
+  margin-left: 30%;
+  margin-right: 30%; }
+
+.main-content {
+  padding: 1%; }
+
+/*------------------------------------*\
+    #TIMER
+\*------------------------------------*/
 
 /*# sourceMappingURL=main.css.map */

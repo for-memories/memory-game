@@ -32,13 +32,14 @@ app.router.add('hard', function () {
   app.gamePage(16);
 });
 app.gamePage = function (numPairs) {
+  
   var template = _.template($('#gameBoard').html(), { variable: 'm' });
   var html = template({
     cards: app.gameDeck(numPairs)
   });
 
   $('.main-content').html(html);
-
+  app.setTimer();
   // There's a variable currentFlippedElement
   // On click, check the icon of the clicked element
   var currentFlippedElement;

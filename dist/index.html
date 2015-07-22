@@ -5,7 +5,10 @@
   <title>Title</title>
 
   <link rel="stylesheet" href="css/main.css">
-  <link href="http://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" type="text/css">
+   <link rel="stylesheet" href="css/animate.css">
+
+ <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600,300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Oleo+Script:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="http://chrisdavies.github.io/memory/css/memory.css?cbh=30b11dd55805f1ff397c119288257af0">
 </head>
 <body>
@@ -18,9 +21,10 @@
       <span class="line">
         <img class="silhouette-left" src="img/profile-left.png">
       </span>
+      <span class="title">Memory<span class="icon-lightbulb title-bulb hvr-pop"></span></span>
         <span class="game-menu">
-          <button class= "easy"> easy</button>
-          <button class="hard"> hard </button>
+          <button class= "easy game-btn"> easy</button>
+          <button class="hard game-btn"> hard </button>
         </span>
       <span class="line">
         <img class="silhouette" src="img/profile.png">
@@ -29,6 +33,8 @@
   </script>
 
   <script type="text/html" id="gameBoard">
+   <span class="title game-play">Memory<span class="icon-lightbulb title-bulb hvr-pop"></span></span>
+   
     <div class="game-board">
       <% m.cards.forEach(function (card) { %>
         <!-- attribute added to game-tile class, telling you the name of the icon with _. -->

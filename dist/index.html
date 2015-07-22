@@ -12,10 +12,22 @@
 
   <main class="main-content">
   </main>
+
   <script type = "text/html" id="home">
-    <button class= "easy"> easy</button>
-    <button class = "hard"> hard </button>
+    <div class="home-wrapper">
+      <span class="line">
+        <img class="silhouette-left" src="img/profile-left.png">
+      </span>
+        <span class="game-menu">
+          <button class= "easy"> easy</button>
+          <button class="hard"> hard </button>
+        </span>
+      <span class="line">
+        <img class="silhouette" src="img/profile.png">
+      </span>
+    </div>
   </script>
+
   <script type="text/html" id="gameBoard">
     <div class="game-board">
       <% m.cards.forEach(function (card) { %>

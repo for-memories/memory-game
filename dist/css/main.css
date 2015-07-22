@@ -1,5 +1,3 @@
-/*sass --watch src/css:dist/css*/
-
 @charset "UTF-8";
 /* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -66,6 +64,23 @@ p {
 a {
   color: #00AAEE;
   text-decoration: none; }
+
+.home-wrapper {
+  height: 100%;
+  width: auto; }
+
+.game-menu {
+  border: 3px solid orange; }
+
+.silhouette {
+  height: 500px;
+  width: auto;
+  float: right; }
+
+.silhouette-left {
+  height: 500px;
+  width: auto;
+  float: left; }
 
 @font-face {
   font-family: 'fontello';
@@ -218,5 +233,8 @@ html body [class^="icon-"]:before, [class*=" icon-"]:before {
   -webkit-animation-duration: 150ms !important;
   animation-timing-function: ease-in !important;
   -webkit-animating-timing-function: ease-in !important; }
+
+.game-checkbox {
+  display: none; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,5 +1,0 @@
-app.setTimer = function () {
-
- 
-
-};

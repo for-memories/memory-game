@@ -26,7 +26,6 @@ app.gameDeck = function (numPairs) {
     'icon-attach',
     'icon-umbrella',
     'icon-leaf',
-    'icon-bug',
     'icon-smile',
     'icon-paw'
   ];

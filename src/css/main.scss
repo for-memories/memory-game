@@ -3,6 +3,7 @@
 @import 'reset';
 @import 'defaults';
 @import 'fontello.scss';
+@import 'responsive';
 
 
 /*------------------------------------*\
@@ -57,12 +58,9 @@
   font-weight: bold;
   color: black;
   font-size: 70px;
-  margin-left: 5%;
-  margin-right: 1%;
   text-shadow: 3px 3px 0px rgba(121, 134, 203, 1);
 }
 .title-bulb {
-  text-shadow: none;
   color: $blue;
   text-shadow: 2px 0px 2px rgba(150, 150, 150, 1);
 
@@ -72,8 +70,6 @@
   color: gold;
   transition: 300ms ease-in;
 }
-
-
 
 .game-btn {
   margin-top: 2%;
@@ -164,6 +160,44 @@
   padding: 1%;
 }
 
+/*------------------------------------*\
+    #MEDIA QUERIES HOME
+\*------------------------------------*/
+
+@media all and (max-width: 625px) {
+  .game-menu {
+    margin-left: 5% !important;
+  }
+
+  .title-holder {
+    padding: 8% 0 0 0 !important;
+  }
+  .title {
+    font-size: 60px !important;
+  }
+  .title-bulb {
+    text-shadow: 2px 0px 2px rgba(150, 150, 150, 1);
+  }
+  .title-bulb:hover{
+    color: gold;
+    transition: 300ms ease-in;
+  }
+
+  .game-btn {
+    font-size: 23px !important;
+  
+  }
+  .game-btn:hover{
+    font-weight: bold;
+    background-color: white;
+    border: 3px solid gold;
+    transition: 500ms;
+  }
+  .silhouette-left {
+    height: 450px;
+  }
+
+}
 
 /*------------------------------------*\
     #TIMER

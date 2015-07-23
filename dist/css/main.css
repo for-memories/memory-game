@@ -206,6 +206,55 @@ html body [class^="icon-"]:before, [class*=" icon-"]:before {
 
 /* '' */
 /*------------------------------------*\
+    #MEDIA QUERIES HOME
+\*------------------------------------*/
+@media all and (max-width: 625px) {
+  .game-menu {
+    margin-left: 5% !important; }
+
+  .title-holder {
+    padding: 8% 0 0 0 !important; }
+
+  .title {
+    font-size: 65px !important; }
+
+  .title-bulb {
+    text-shadow: 2px 0px 2px #969696; }
+
+  .title-bulb:hover {
+    color: gold;
+    transition: 300ms ease-in; }
+
+  .game-btn {
+    font-size: 23px !important;
+    padding: 0 1% 0.5%; }
+
+  .silhouette-left {
+    height: 450px; } }
+@media all and (max-width: 500px) {
+  .game-menu {
+    margin-left: 5% !important; }
+
+  .title-holder {
+    padding: 8% 0 0 0 !important; }
+
+  .title {
+    font-size: 65px !important; }
+
+  .title-bulb {
+    text-shadow: 2px 0px 2px #969696; }
+
+  .title-bulb:hover {
+    color: gold;
+    transition: 300ms ease-in; }
+
+  .game-btn {
+    font-size: 23px !important;
+    padding: 0 1% 0.5%; }
+
+  .silhouette-left {
+    height: 450px; } }
+/*------------------------------------*\
     #GAME-BOARD
 \*------------------------------------*/
 .game-card {
@@ -242,12 +291,9 @@ html body [class^="icon-"]:before, [class*=" icon-"]:before {
   font-weight: bold;
   color: black;
   font-size: 70px;
-  margin-left: 5%;
-  margin-right: 1%;
   text-shadow: 3px 3px 0px #7986cb; }
 
 .title-bulb {
-  text-shadow: none;
   color: #7986CB;
   text-shadow: 2px 0px 2px #969696; }
 
@@ -328,6 +374,37 @@ html body [class^="icon-"]:before, [class*=" icon-"]:before {
 .main-content {
   padding: 1%; }
 
+/*------------------------------------*\
+    #MEDIA QUERIES HOME
+\*------------------------------------*/
+@media all and (max-width: 625px) {
+  .game-menu {
+    margin-left: 5% !important; }
+
+  .title-holder {
+    padding: 8% 0 0 0 !important; }
+
+  .title {
+    font-size: 60px !important; }
+
+  .title-bulb {
+    text-shadow: 2px 0px 2px #969696; }
+
+  .title-bulb:hover {
+    color: gold;
+    transition: 300ms ease-in; }
+
+  .game-btn {
+    font-size: 23px !important; }
+
+  .game-btn:hover {
+    font-weight: bold;
+    background-color: white;
+    border: 3px solid gold;
+    transition: 500ms; }
+
+  .silhouette-left {
+    height: 450px; } }
 /*------------------------------------*\
     #TIMER
 \*------------------------------------*/

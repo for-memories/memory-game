@@ -25,7 +25,6 @@ app.gameDeck = function (numPairs) {
     'icon-scissors',
     'icon-music',
     'icon-attach',
-    'icon-cloud',
     'icon-umbrella',
     'icon-leaf',
     'icon-bug',
@@ -129,7 +128,10 @@ app.gamePage = function (numPairs) {
         //reset currentFlippedElement to go back to the first click
         currentFlippedElement ='';
         matchCount == ++matchCount;
-        alert(matchCount);
+        if(matchCount == numPairs) {
+          alert('You win! Play again?');
+          window.history.back();
+        }
       }
       else {
         //unflip both icons

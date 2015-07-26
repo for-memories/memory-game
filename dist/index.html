@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Title</title>
+
+  <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/animate.css">
+
+ <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600,300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Oleo+Script:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="http://chrisdavies.github.io/memory/css/memory.css?cbh=30b11dd55805f1ff397c119288257af0">
+</head>
+<body>
+
+  <main class="main-content">
+  </main>
+
+  <script type = "text/html" id="home">
+    <div class="home-wrapper">
+      <span class="line">
+        <img class="silhouette-left" src="img/profile-left.png">
+      </span>
+    <div class = "title-holder">
+
+      <div class="title">Memory<span class="icon-lightbulb title-bulb hvr-pop"></span></div>
+        <span class="game-menu">
+          <button class= "easy game-btn"> easy</button>
+          <button class="hard game-btn"> hard </button>
+        </span>
+    </div>
+    </div>
+  </script>
+
+  <script type="text/html" id="gameBoard">
+   <span class="title game-play">Memory<span class="icon-lightbulb title-bulb hvr-pop"></span></span>
+
+    <div class="game-board">
+      <% m.cards.forEach(function (card) { %>
+        <!-- attribute added to game-tile class, telling you the name of the icon with _. -->
+        <label class="game-tile" icon="<%- card %>">
+          <input type="checkbox">
+          <span class="game-card">
+            <span class="game-icon">
+              <span class="<%- card %>"></span>
+            </span>
+          </span>
+        </label>
+      <% }) %>
+    </div>
+  </script>
+
+  <script src="js/vendor.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>

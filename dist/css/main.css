@@ -1,0 +1,412 @@
+@charset "UTF-8";
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-family: sans-serif;
+  line-height: 1.4em;
+  background: #FFF;
+  color: mintcream; }
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+h2 {
+  font-size: 1.5em;
+  margin: 0.75em 0; }
+
+h3 {
+  font-size: 1.17em;
+  margin: 0.83em 0; }
+
+h5 {
+  font-size: .83em;
+  margin: 1.5em 0; }
+
+h6 {
+  font-size: .75em;
+  margin: 1.67em 0; }
+
+h1, h2, h3, h4,
+h5, h6 {
+  font-weight: bolder; }
+
+p {
+  line-height: 1.4em;
+  margin-bottom: 1em; }
+
+a {
+  color: #00AAEE;
+  text-decoration: none; }
+
+@font-face {
+  font-family: 'fontello';
+  src: url("../fonts/fontello.eot?50336093");
+  src: url("../fonts/fontello.eot?50336093#iefix") format("embedded-opentype"), url("../fonts/fontello.woff?50336093") format("woff"), url("../fonts/fontello.ttf?50336093") format("truetype"), url("../fonts/fontello.svg?50336093#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?50336093#fontello') format('svg');
+  }
+}
+*/
+html body [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  speak: none !important;
+  display: inline-block !important;
+  text-decoration: inherit !important;
+  width: 1em !important;
+  margin-right: .2em !important;
+  text-align: center !important;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal !important;
+  text-transform: none !important;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em !important;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em !important;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+.icon-feather:before {
+  content: '\e800'; }
+
+/* '' */
+.icon-droplet:before {
+  content: '\e801'; }
+
+/* '' */
+.icon-list:before {
+  content: '\e802'; }
+
+/* '' */
+.icon-moon:before {
+  content: '\e803'; }
+
+/* '' */
+.icon-eye:before {
+  content: '\e804'; }
+
+/* '' */
+.icon-lightbulb:before {
+  content: '\e805'; }
+
+/* '' */
+.icon-heart:before {
+  content: '\e806'; }
+
+/* '' */
+.icon-hourglass:before {
+  content: '\e807'; }
+
+/* '' */
+.icon-flag:before {
+  content: '\e808'; }
+
+/* '' */
+.icon-star:before {
+  content: '\e809'; }
+
+/* '' */
+.icon-camera:before {
+  content: '\e80a'; }
+
+/* '' */
+.icon-search-outline:before {
+  content: '\e80c'; }
+
+/* '' */
+.icon-search:before {
+  content: '\e80d'; }
+
+/* '' */
+.icon-search-circled:before {
+  content: '\e80e'; }
+
+/* '' */
+.icon-trash:before {
+  content: '\e80f'; }
+
+/* '' */
+.icon-brush:before {
+  content: '\e810'; }
+
+/* '' */
+.icon-scissors:before {
+  content: '\e811'; }
+
+/* '' */
+.icon-music:before {
+  content: '\e812'; }
+
+/* '' */
+.icon-attach:before {
+  content: '\e813'; }
+
+/* '' */
+.icon-cloud:before {
+  content: '\e814'; }
+
+/* '' */
+.icon-umbrella:before {
+  content: '\e815'; }
+
+/* '' */
+.icon-leaf:before {
+  content: '\e816'; }
+
+/* '' */
+.icon-bug:before {
+  content: '\e817'; }
+
+/* '' */
+.icon-smile:before {
+  content: '\e818'; }
+
+/* '' */
+.icon-paw:before {
+  content: '\e819'; }
+
+/* '' */
+/*------------------------------------*\
+    #MEDIA QUERIES HOME
+\*------------------------------------*/
+@media all and (max-width: 625px) {
+  .game-menu {
+    margin-left: 5% !important; }
+
+  .title-holder {
+    padding: 8% 0 0 0 !important; }
+
+  .title {
+    font-size: 65px !important; }
+
+  .title-bulb {
+    text-shadow: 2px 0px 2px #969696; }
+
+  .title-bulb:hover {
+    color: gold;
+    transition: 300ms ease-in; }
+
+  .game-btn {
+    font-size: 23px !important;
+    padding: 0 1% 0.5%; }
+
+  .silhouette-left {
+    height: 450px; } }
+@media all and (max-width: 500px) {
+  .game-menu {
+    margin-left: 5% !important; }
+
+  .title-holder {
+    padding: 8% 0 0 0 !important; }
+
+  .title {
+    font-size: 65px !important; }
+
+  .title-bulb {
+    text-shadow: 2px 0px 2px #969696; }
+
+  .title-bulb:hover {
+    color: gold;
+    transition: 300ms ease-in; }
+
+  .game-btn {
+    font-size: 23px !important;
+    padding: 0 1% 0.5%; }
+
+  .silhouette-left {
+    height: 450px; } }
+/*------------------------------------*\
+    #GAME-BOARD
+\*------------------------------------*/
+.game-card {
+  animation-duration: 150ms !important;
+  -webkit-animation-duration: 150ms !important;
+  animation-timing-function: ease-in !important;
+  -webkit-animating-timing-function: ease-in !important; }
+
+.game-checkbox {
+  display: none; }
+
+.game-tile input {
+  display: none; }
+
+/*------------------------------------*\
+    #COLORS
+\*------------------------------------*/
+/*------------------------------------*\
+    #HOME
+\*------------------------------------*/
+.home-wrapper {
+  height: 100%;
+  width: auto; }
+
+.game-menu {
+  padding: 0 1%;
+  margin-left: 6%; }
+
+.title-holder {
+  padding: 7%; }
+
+.title {
+  font-family: 'Oleo Script', cursive;
+  font-weight: bold;
+  color: black;
+  font-size: 70px;
+  text-shadow: 3px 3px 0px #7986cb; }
+
+.title-bulb {
+  color: #7986CB;
+  text-shadow: 2px 0px 2px #969696; }
+
+.title-bulb:hover {
+  color: gold;
+  transition: 300ms ease-in; }
+
+.game-btn {
+  margin-top: 2%;
+  margin-right: 1%;
+  background-color: #7986CB;
+  font-family: 'Titillium Web', sans-serif;
+  color: #ffffff;
+  font-size: 25px;
+  padding: 0 1% 0.5%;
+  border: 3px solid white;
+  border-radius: 10px;
+  outline: none;
+  border: none; }
+
+.game-btn:hover {
+  color: #7986CB;
+  font-weight: bold;
+  background-color: white;
+  border: 3px solid gold;
+  transition: 500ms; }
+
+.silhouette {
+  height: 500px;
+  width: auto;
+  float: right; }
+
+.silhouette-left {
+  height: 500px;
+  width: auto;
+  float: left; }
+
+/*------------------------------------*\
+    #HOVER ANIMATIONS
+\*------------------------------------*/
+/* from hover.css */
+@-webkit-keyframes hvr-pop {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); } }
+@keyframes hvr-pop {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); } }
+.hvr-pop {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale; }
+
+.hvr-pop:hover, .hvr-pop:focus, .hvr-pop:active {
+  -webkit-animation-name: hvr-pop;
+  animation-name: hvr-pop;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1; }
+
+/*------------------------------------*\
+    #GAME-PLAY
+\*------------------------------------*/
+.game-play {
+  text-align: center;
+  margin-left: 30%;
+  margin-right: 30%; }
+
+.main-content {
+  padding: 1%; }
+
+/*------------------------------------*\
+    #MEDIA QUERIES HOME
+\*------------------------------------*/
+@media all and (max-width: 625px) {
+  .game-menu {
+    margin-left: 5% !important; }
+
+  .title-holder {
+    padding: 8% 0 0 0 !important; }
+
+  .title {
+    font-size: 60px !important; }
+
+  .title-bulb {
+    text-shadow: 2px 0px 2px #969696; }
+
+  .title-bulb:hover {
+    color: gold;
+    transition: 300ms ease-in; }
+
+  .game-btn {
+    font-size: 23px !important; }
+
+  .game-btn:hover {
+    font-weight: bold;
+    background-color: white;
+    border: 3px solid gold;
+    transition: 500ms; }
+
+  .silhouette-left {
+    height: 450px; } }
+/*------------------------------------*\
+    #TIMER
+\*------------------------------------*/
+
+/*# sourceMappingURL=main.css.map */

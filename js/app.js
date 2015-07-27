@@ -66,7 +66,6 @@ app.router.add('', function () {
  $('.hard').click(function (){
    location.hash = '#hard';
  });
-
 });
 
 app.router.add('easy', function () {

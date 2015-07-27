@@ -359,3 +359,22 @@ html body [class^="icon-"]:before, [class*=" icon-"]:before {
   .silhouette-left {
     height: 450px; } }
 
+@media all and (max-width: 500px) {
+  .game-play {
+    margin-left: 23% !important; }
+  
+.title {
+    font-size: 50px !important; }
+
+  .silhouette-left {
+    height: 420px; } }
+
+@media all and (max-width: 400px) {
+  .game-play {
+    margin-left: 21% !important; }
+
+  .title {
+    font-size: 50px !important; }
+  
+  .silhouette-left {
+    height: 400px; } }
